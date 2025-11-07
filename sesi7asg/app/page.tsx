@@ -99,21 +99,12 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 p-4 sm:p-8 font-sans">
-      <script src="https://cdn.tailwindcss.com"></script>
-      <style>
-        {`@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-         .font-sans { font-family: 'Inter', sans-serif; }`}
-      </style>
-      
-      <div id="notification-container"></div> {/* Notification container for simulated navigation */}
-
       <div className="max-w-4xl mx-auto">
         <header className="text-center mb-10 p-6 bg-white rounded-xl shadow-lg">
           <h1 className="text-4xl font-extrabold text-indigo-600 tracking-tight">
             Product Catalog
           </h1>
         </header>
-
         {renderContent()}
       </div>
     </div>
